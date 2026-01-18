@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MJ Web Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Fond bleu dégradé -->
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <!-- Header sticky -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="MJ Web Pro">
+        <img class="logo" src="logo.png" alt="MJ Web Pro" />
+        <div class="brand-text">
+          <div class="brand-name" id="brandName">MJ Web Pro</div>
+          <div class="brand-sub" id="brandSub">Sites web • Branding • QR Code • Automatisation IA</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation">
+        <a class="nav-link" href="#services">Offres</a>
+        <a class="nav-link" href="#process">Process</a>
+        <a class="nav-link" href="#pricing">Tarifs</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-accent" id="ctaBtn2" href="#contact">Prendre rendez-vous</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="container mobile-nav" id="mobileNav">
+      <a class="nav-link" href="#services">Offres</a>
+      <a class="nav-link" href="#process">Process</a>
+      <a class="nav-link" href="#pricing">Tarifs</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="btn btn-accent mobile-cta" href="#contact">Prendre rendez-vous</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-wrap">
+        <h1 class="hero-title">
+          <span class="hero-brand" id="brandInline">MJ Web Pro</span><br />
+          <span class="gradient-text" id="headline">Le digital et l’IA au service de votre croissance</span>
+        </h1>
+
+        <p class="subtitle" id="subtitle">
+          Création de sites web, identité visuelle, QR codes et solutions digitales pour professionnels.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-lg btn-accent" id="ctaBtn" href="#contact">Prendre rendez-vous</a>
+          <a class="btn btn-lg" href="#services">Voir les offres</a>
+        </div>
+
+        <div class="trust-row" id="trustRow"></div>
+      </div>
+    </section>
+
+    <!-- OFFRES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Offres</h2>
+          <p class="section-sub muted" id="servicesSub"></p>
+        </div>
+
+        <!-- (optionnel) petits boutons d’icônes -->
+        <div class="pill-row" id="pillsRow">
+          <button class="pill" type="button" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="pill" type="button" data-filter="Site vitrine">Site</button>
+          <button class="pill" type="button" data-filter="Branding">Branding</button>
+          <button class="pill" type="button" data-filter="QR Code">QR Code</button>
+          <button class="pill" type="button" data-filter="IA">IA</button>
+        </div>
+
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Process</h2>
+          <p class="section-sub muted">Simple, clair, efficace.</p>
+        </div>
+        <div class="process-grid" id="processGrid"></div>
+      </div>
+    </section>
+
+    <!-- TARIFS -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Tarifs</h2>
+          <p class="section-sub muted">3 packs simples. Transparent, efficace.</p>
+        </div>
+        <div class="pricing-grid" id="pricingGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT (sans téléphone) -->
+   <section class="section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" id="contactTitle">Contact</h2>
+      <p class="section-sub muted" id="contactDesc">
+        Contacte-moi par email ou Instagram, je réponds rapidement.
+      </p>
+    </div>
+
+    <div class="contact-grid contact-grid--center">
+      <!-- EMAIL -->
+      <a class="card contact-card" id="contactEmailCard" href="#">
+        <div class="iconbox" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6"/>
+          </svg>
+        </div>
+
+        <div class="contact-text">
+          <div class="card-title">Email</div>
+          <div class="card-desc" id="contactEmail">contact@tondomaine.fr</div>
+        </div>
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a class="card contact-card" id="contactInstaCard" href="#" target="_blank" rel="noreferrer">
+        <div class="iconbox" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div class="contact-text">
+          <div class="card-title">Instagram</div>
+          <div class="card-desc">@mjwebpro</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- IMPORTANT : content.js avant script.js -->
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

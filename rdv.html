@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prendre rendez-vous — MJ Web Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Retour accueil">
+        <img class="logo" src="logo.png" alt="MJ Web Pro logo" />
+        <div class="brand-text">
+          <div class="brand-name">MJ Web Pro</div>
+          <div class="brand-sub">Rendez-vous</div>
+        </div>
+      </a>
+      <a class="btn" href="index.html">Retour</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title"><span class="gradient-text">Prendre rendez-vous</span></h1>
+        <p class="subtitle">Choisis la méthode la plus simple pour toi.</p>
+
+        <div class="pricing-grid" style="margin-top:18px;">
+          <div class="card price-card" style="min-height:auto;">
+            <div class="price-title">WhatsApp</div>
+            <div class="price-sub">Le plus rapide pour discuter.</div>
+            <a class="btn btn-accent btn-lg" href="https://wa.me/33600000000" target="_blank" rel="noreferrer">
+              Ouvrir WhatsApp
+            </a>
+          </div>
+
+          <div class="card price-card" style="min-height:auto;">
+            <div class="price-title">Calendly</div>
+            <div class="price-sub">Réserve un créneau en ligne.</div>
+            <a class="btn btn-accent btn-lg" href="https://calendly.com/" target="_blank" rel="noreferrer">
+              Réserver
+            </a>
+          </div>
+
+          <div class="card price-card" style="min-height:auto;">
+            <div class="price-title">Email</div>
+            <div class="price-sub">Pour une demande détaillée.</div>
+            <a class="btn btn-accent btn-lg" href="mailto:contact@tondomaine.fr">
+              Envoyer un email
+            </a>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:18px;">
+          © <span id="year"></span> MJ Web Pro. Tous droits réservés.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
